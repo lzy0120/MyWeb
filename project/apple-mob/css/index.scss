@@ -1,0 +1,214 @@
+@charset "utf-8";
+@import "mixin";
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 249543 */
+  src: url('https://at.alicdn.com/t/font_o6eywi6x3ppynwmi.eot');
+  src: url('https://at.alicdn.com/t/font_o6eywi6x3ppynwmi.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_o6eywi6x3ppynwmi.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_o6eywi6x3ppynwmi.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_o6eywi6x3ppynwmi.svg#iconfont') format('svg');
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.head-nav{
+	height: 100%;
+	width: 100%;
+	background: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	>h3{
+		color: #fff;
+		@include font-dpr(38px);
+		margin-left: 4%;
+	}
+	.nav{
+		>li{
+			@include font-dpr(16px);
+			line-height: 3;
+			border-bottom: 1px solid #fff;
+			margin:0 10%;
+			width: 80%;
+			>a{
+				color: white;
+				width: 100%;
+				display: block;
+			}
+		}
+		.search{
+			@include font-dpr(18px);
+		}
+	}
+}
+
+.mainbox{
+	width: 90%;
+	margin:0 auto;
+}
+
+/* 头部 */
+header{
+	background: #000;
+	.mainbox{
+		@at-root{
+			.nav-menu{
+				@include flexbox();
+				@include flexbox-hc();
+				@include flexbox-vc();
+				li{
+					color: #fff;
+					@include font-dpr(30px);
+					@include flexbox-vc();
+					a{
+						color: #fff;
+						@include font-dpr(30px);
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+/* 主体 */
+main{
+	@at-root{
+		/* 横幅 */
+		.banner01{
+			padding-top: px2rem(80px);
+			a{
+				width: 100%;
+				height: px2rem(500px);
+				display: block;
+				background: url(../images/macbookpro_portrait_small_2x.jpg) no-repeat center px2rem(125px);
+				background-size: auto px2rem(450px);
+				p{
+					@include font-dpr(20px);
+					text-align: center;
+					line-height: 1;
+					font-weight: bold;
+					color: #555;
+					em{
+						display: block;
+						@include font-dpr(26px);
+						font-weight: bold;
+					}
+				}
+			}
+		}
+		.banner02{
+			li{
+				a{
+					display: block;
+					width: 100%;
+					height: px2rem(200px);
+					background: url(../images/accessories_small_2x.jpg) center 0 no-repeat;
+					background-size: auto px2rem(200px);
+				}
+				.img02{
+					background: url(../images/ipad_pro_small_2x.jpg) center 0 no-repeat;
+					background-size: auto px2rem(200px);
+				}
+				.img03{
+					background: url(../images/airpods_small_2x.jpg) center 0 no-repeat;
+					background-size: auto px2rem(200px);
+				}
+				.img04{
+					background: url(../images/iphone_upgrade_small_2x.jpg) center 0 no-repeat;
+					background-size: auto px2rem(200px);
+				}
+			}
+		}
+	}	
+	/* 菜单 */
+	.menu{
+		p{
+			line-height: 1.5;
+			padding: px2rem(16px) 0;
+			border-bottom: 1px solid #555;
+		}
+		ul{
+			li{
+				border-bottom: 1px solid #555;
+				>a{
+					display: block;
+					line-height: 3;
+					font-weight: bold;
+					color: #555;
+					@include flexbox();
+				    @include flexbox-hc;
+				    span{
+				    	display: block;
+				    }
+				    em{
+				    	display: block;
+				    }
+				}
+			}
+		}
+		
+		.internal-menu{
+			display: none;
+			overflow: hidden;
+			li{
+				border:none;
+				display: block;
+				>a{
+					margin-left: px2rem(20px);
+				}
+			}
+		}
+	}	
+}
+/* 主体结束 */
+
+/* 底部 */
+footer{
+	margin-top: px2rem(20px);
+	.more{
+		line-height: 1.2;
+		a{
+			color:blue;
+			font-weight: bold;
+		}
+	}
+	.china{
+		background: url(../images/f-ico.png) 0 center no-repeat;
+		background-size: auto px2rem(16px);
+		line-height: 3;
+		padding-left: px2rem(20px);
+	}
+	.last-ul{
+		>li{
+			display: inline-block;
+			border-right: 1px solid #555;
+			font-weight: bold;
+			line-height: 2;
+			padding-right: px2rem(8px);
+			margin-left: px2rem(4px);
+			a{
+				font-weight: bold;
+				color: #555;
+			}
+		}
+		.first-link{
+			margin: 0;
+		}
+		.last-link{
+			border:none;
+			padding: 0;
+		}
+	}
+}

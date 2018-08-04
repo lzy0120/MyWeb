@@ -1,0 +1,203 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>我的简历2.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+<div class="load">
+    <div class="load-box">
+        <i class="iconfont">&#xe6a4;</i>
+        <p>已经载入0%...</p>
+    </div>
+</div>
+<!-- Swiper -->
+<div class="swiper-container swiper-container-vertical">
+    <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+        <div class="swiper-slide swiper-slide-active bg01" style="height: 361px; margin-bottom: 30px;">
+            <div class="information">
+                <h2>个人信息</h2>
+                <ul>
+                    <li><span>姓名</span><em>李忠宇</em></li>
+                    <li><span>出生年份</span><em>1991</em></li>
+                    <li><span>学历</span><em>大专</em></li>
+                    <li><span>职位</span><em>Web前端</em></li>
+                    <li><span>工作状态</span><em>离职</em></li>
+                </ul>
+                <img src="images/ico01.png" alt="">
+            </div>
+        </div>
+        <div class="swiper-slide swiper-slide-next bg02" style="height: 361px; margin-bottom: 30px;">
+            <div class="sk">
+                <h2>技能</h2>
+                <div class="sk-box">
+                    <div class="sk01">
+                        <ul>
+                            <li>
+                                <em>HTML&CSS:</em>
+                                <div class="sk-c">
+                                    <span class="sk-c-1">85%</span>
+                                </div>
+                            </li>
+                            <li>
+                                <em>Sass:</em>
+                                <div class="sk-c">
+                                    <span class="sk-c-2">80%</span>
+                                </div>
+                            </li>
+                            <li>
+                                <em>JQuery:</em>
+                                <div class="sk-c">
+                                    <span class="sk-c-3">30%</span>
+                                </div>
+                            </li>
+                            <li>
+                                <em>Git:</em>
+                                <div class="sk-c">
+                                    <span class="sk-c-4">40%</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sk02">
+                        <p>1、熟悉HTML标签语义化;熟练使用CSS+DIV编写符合规范的代码，并兼容主流浏览器;对HTML5及CSS3有一定了解。</p>
+                        <p>2、了解JQuery库，能运用JQuery给网页增加互动效果。</p>
+                        <p>3、使用SASS编写更加简洁和易于维护的样式代码，提高工作效率。</p>
+                        <p>4、使用GIT管理个人项目。</p>
+                        <p>5、其他前端技术正在继续学习中。</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="swiper-slide bg03" style="height: 361px; margin-bottom: 30px;">
+            <div class="exp">
+                <div class="project">
+                    <h2>页面仿制Demo</h2>
+                    <ul class="pro-box">
+                        <li class="on">
+                            <a href="project/apple-mob/index.html">
+                                <img src="images/my-pro-01.jpg" alt="">
+                            </a>
+                            <p>仿苹果官网手机版 HTML+CSS+JQuery，个人练习制作的作品，用于手机移动端浏览，添加了一些JQuery交互效果。
+                            </p>
+                        </li>
+                        <li class="last-pro">
+                            <p>继续更新中......</p>
+                        </li>
+                    </ul>
+                    <button class="but-l"><i class="iconfont">&#xe68a;</i></button>
+                    <button class="but-r"><i class="iconfont">&#xe689;</i></button>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide bg04" style="height: 361px; margin-bottom: 30px;">
+            <div class="about-me">
+                <p>这里是我的联系方式；</p>
+                <div class="contact">
+                    <div class="click">
+                        <img src="images/here.gif" alt="">
+                    </div>
+                    <ul>
+                        <li>电话：<a href="tel:18186969120">18186969120</a></li>
+                        <li>QQ：<a href="http://wpa.qq.com/msgrd?v=3&uin=670283210&site=qq&menu=yes">670283210</a></li>
+                        <li>邮箱：<a href="mailto:670283210@qq.com">670283210@qq.com</a></li>
+                    </ul>
+                </div>
+                <p>希望能得到和您一起共事的机会！！！</p>
+            </div>
+        </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+        <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
+        <span class="swiper-pagination-bullet"></span>
+    </div>
+</div>
+
+<script src="js/jquery.js"></script>
+
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    direction: 'vertical',
+    slidesPerView: 1,
+    paginationClickable: true,
+    spaceBetween: 30,
+    mousewheelControl: true
+  });
+
+  var $prev = $(".but-l"),
+    $next = $(".but-r"),
+    $lis = $(".pro-box li"),
+    idx = 0;
+
+  $prev.click(function () {
+    idx = idx - 1;
+    if (idx < 0) {
+      idx = $lis.size() - 1;
+    }
+    addOn(".pro-box li", idx);
+  });
+
+  $next.click(function () {
+    idx = idx + 1;
+    if (idx > $lis.size() - 1) {
+      idx = 0;
+    }
+    addOn(".pro-box li", idx);
+  });
+
+  function addOn(className, idx) {
+    $(className).eq(idx).addClass("on")
+      .siblings().removeClass("on");
+  }
+
+  var load = $(".load"),
+    loadTest = load.find("p"),
+    loadNum = 0,
+    timer = null;
+
+  /*命名一个空的变量（这里指下面的计时器）*/
+
+  function loadAnimate() {
+    loadNum++;
+    /*初始值为0，每执行一次就加1*/
+
+    if (loadNum >= 100) {
+      load.hide();
+      /*隐藏这个load动画*/
+      clearInterval(timer);
+      /*清除计时器*/
+      $(".information").css({
+        webkitAnimationPlayState: "running",
+        animationPlayState: "running"
+      })
+    }
+    loadTest.text("已经载入" + loadNum + "%...");
+  }
+
+  timer = setInterval(loadAnimate, 40);
+  /*让空变量等于这个计时器，计时器 单位毫秒,每40毫秒执行一次*/
+</script>
+
+</body>
+</html>
